@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+
+    </script>
+    <!— Yandex.Metrika counter —>
+        <script type="text/javascript">
+            (function(m, e, t, r, i, k, a) {
+                m[i] = m[i] || function() {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+                m[i].l = 1 * new Date();
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(62559154, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true
+            });
+
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/62559154" style="position:absolute; left:-9999px;" alt="" /></div>
+        </noscript>
+
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <li class="first"><a href="#one">персонажи</a></li>
+            <li><a href="#tow">фильмы</a></li>
+            <li><a href="#three">сериалы</a></li>
+            <li><a href="#four">актеры</a></li>
+            <li><a href="#five">будущее</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="table">MARVEL</h1>
+        <h2 class="extra">AVENGERS</h2>
+    </header>
+
+
+    <main>
+        <section class="content">
+            <div class="link" id="one">
+                <a href="">
+                    <div class="text">
+                        <h2>персонажи</h2>
+                        <p>все главные и второстипенные герои киновселенной</p>
+                    </div>
+                    <img src="https://avatars.mds.yandex.net/get-zen_doc/1131118/pub_5c72a65f8cbda400c2d12f36_5c72a72154543b00b0ee92fd/scale_1200" alt="персонажи">
+                </a>
+            </div>
+
+            <div class="link" id="tow">
+                <a href="">
+                    <div class="text">
+                        <h2>фильмы</h2>
+                        <p>все когда-либо снятые фильмы и мультфильмы</p>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/6e/7d/ff/6e7dff6211cb4840e41c8e8a5dd4e6a8.jpg" alt="фильмы">
+                </a>
+            </div>
+
+            <div class="link" id="four">
+                <a href="">
+                    <div class="text">
+                        <h2>сериалы</h2>
+                        <p>все сериалы и мультсериалы, снятые по киновселенной</p>
+                    </div>
+                    <img src="https://cdn.wallpapersafari.com/54/74/c7AWuX.jpg" alt="мультики">
+                </a>
+            </div>
+
+            <div class="link" id="three">
+                <a href="">
+                    <div class="text">
+                        <h2>актеры</h2>
+                        <p>актеры, играющие наших любимых героев</p>
+                    </div>
+                    <img src="https://i.blogs.es/7302bd/todas-las-estrellas-de-marvel-diez-anos-foto/1366_2000.jpg" alt="актеры">
+                </a>
+            </div>
+
+            <div class="link" id="five">
+                <a href="">
+                    <div class="text">
+                        <h2>будущее</h2>
+                        <p>что же нас может ждать в будущем?</p>
+                    </div>
+                    <img src="https://isabelvonbentheim.de/wp-content/uploads/2014/07/Whatsnext-700x700.jpg" alt="продолжение">
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="contact">
+
+        <form class="formation" method="POST" name="form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="marvel">
+            <input type="hidden" name="admin_email" value="koromit15@gmail.com">
+            <input type="hidden" name="form_subject" value="запрос на улудшение">
+
+            <!-- END Hidden Required Fields -->
+            <input required name="Name" type="text" placeholder="Ваше имя" />
+
+            <br>
+
+            <input required name="E-mail" type="text" placeholder="Ваша почта" />
+
+
+            <br>
+
+
+            <input required name="Phone" type="text" placeholder="Ваш номер телефона" />
+
+            <br>
+
+            <input type="textarea" name="text" placeholder="Ваше сообщение" class="message">
+
+            <br>
+
+            <button class="manager">Связаться с Менеджером</button>
+
+        </form>
+
+
+    </section>
+
+    <footer>
+            <h2>THANK`S FOR VIEWING MY SITE ;-)</h2>
+            <p>All rights reserved</p>
+            <a href="https://instagram.com/koromit15?igshid=34srwdn9245k">this site was made by <b>DIMMy</b></a>
+    </footer>
+
+</body>
+
+</html>
